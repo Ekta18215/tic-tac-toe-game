@@ -75,6 +75,19 @@ const checkIsWinner = () =>{
   ) {
     setWinMessage(`${itemArray[2]} won`);
   }
+  else if(
+    itemArray[0]!=="empty" &&
+    itemArray[1]!=="empty" &&
+    itemArray[2]!=="empty" &&
+    itemArray[3]!=="empty" &&
+    itemArray[4]!=="empty" &&
+    itemArray[5]!=="empty" &&
+    itemArray[6]!=="empty" &&
+    itemArray[7]!=="empty" &&
+    itemArray[8]!=="empty"
+  ) {
+    setWinMessage(`draw`);
+  }
 
 };
 
